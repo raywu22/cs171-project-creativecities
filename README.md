@@ -15,3 +15,8 @@ Portions of code handed in:
 -- CreativeCities.html (where actual visualization is located)
 -- about.html, contact.html, index.html (portions of webpages)
 - process book
+
+Portions of interaction:
+- Toggle between cities
+- Toggle between different layers (transportation (dots), schools, companies, food)
+- right most graph on bottom will show aggregate comparisons between different citiesa
