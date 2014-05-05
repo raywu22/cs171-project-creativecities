@@ -36,9 +36,9 @@
 
 
 
-    d3.json("./data/cleanedData/cleaned_data_02.json",function(error,dataC){
+    d3.json("./data/cleanedData/cleaned_data_sfo_02.json",function(error,dataC){
 
-        d3.csv("./data/creativeprofessionsbosnyc.csv",function(error,data){
+        d3.csv("./data/creativeprofessionsNYCBOSSF.csv",function(error,data){
 
             //console.log(data);
             //console.log(dataC);
@@ -47,21 +47,22 @@
 
                 bosArr = dataC["children"][0]["yearly"] // Boston Array
                 nycArr = dataC["children"][1]["yearly"] // New York Array
+                sfoArr = dataC["children"][2]["yearly"] // San Francisco Array
 
-                // Attempt to check existing dates
-//                $.each(bosArr,function(idB,arrayB){
-//                    if(arrayB["year"] == array["Year"]){
-//                        dataC["children"][0]["yearly"][idB]["creativeOccupationTotal"] = array["Boston_total_creative_occupation"]
-//                        dataC["children"][0]["yearly"][idB]["creativeOccupationPercentage"] = array["Boston_percentage_creative"]
-//                    }else{
-//                        var bosObj = {
-//                            "year":array["Year"],
-//                            "patent":array["BOS"]
-//                        }
-//                        bosArr.push(bosObj);
-//                    }
-//                    console.log(arrayB)
-//                })
+                Attempt to check existing dates
+                $.each(bosArr,function(idB,arrayB){
+                    if(arrayB["year"] == array["Year"]){
+                        dataC["children"][0]["yearly"][idB]["creativeOccupationTotal"] = array["Boston_total_creative_occupation"]
+                        dataC["children"][0]["yearly"][idB]["creativeOccupationPercentage"] = array["Boston_percentage_creative"]
+                    }else{
+                        var bosObj = {
+                            "year":array["Year"],
+                            "patent":array["BOS"]
+                        }
+                        bosArr.push(bosObj);
+                    }
+                    console.log(arrayB)
+                })
 
                 var bosObj = {
                     "year":array["Year"],
@@ -72,14 +73,22 @@
 
                 var nycObj = {
                     "year":array["Year"],
-                    "creativeOccupationTotal":parseInt(array["New_York_total_creative_occuption"]),
+                    "creativeOccupationTotal":parseInt(array["New_York_total_creative_occupation"]),
                     "creativeOccupationPercentage":parseFloat(array["New_York_percentage_creative"])
                 }
                 nycArr.push(nycObj);
 
+                var sfoObj = {
+                    "year":array["Year"],
+                    "creativeOccupationTotal":parseInt(array["SF_total_creative_occupation"]),
+                    "creativeOccupationPercentage":parseFloat(array["SF_percentage_creative"])
+                }
+                sfoArr.push(sfoObj);
+
             })
 
             console.log(dataC);
+            //saveToFile(dataC,"cleaned_data_sfo_02.json");
             saveToFile(dataC,"cleaned_data_03.json");
         });
 

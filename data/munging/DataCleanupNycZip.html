@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="./libs/d3.v3.min.js"></script>
+<script src="./libs/queue.v1.min.js"></script>
+<script src="./libs/topojson.v1.min.js"></script>
+<script type="text/javascript" src="./libs/jquery-1.11.0.min.js"></script>
+<script src="./libs/FileSaver.js"></script>
+
+<div id="vis"></div>
+
+
+<script>
+
+    // 90spatentsBOS_NYC_SF.csv
+    // Boston_Active_Food_Establishment_FT_filter.csv
+    // Boston_Public_Schools__School_Year_2012-2013_.csv
+    // boston_registeredcompanies.csv
+
+    // BP_2011_00CZ1_metadata.csv
+    // BP_2011_00CZ1_with_ann.csv
+    // creativeprofessionsbosnyc.csv
+    // grid_quarters_public_metadata.csv
+    // mbta_ridership_with_lat_long.csv
+    // MTA_ridership_data_with_lat_long.csv
+    // NSRDB_StationsMeta.csv
+    // NYCSidewalk_Cafes.csv
+    //
+    // rae_public_metadata.csv
+    // us-named.json
+
+
+var n ={};
+
+    d3.tsv("./data/Done/NYC_ZipCodes2.csv",function(error,data){
+
+//        var nested_data = d3.nest()
+//                .key(function(d) { return d.ZCTA5CE00; }).sortKeys(d3.ascending)
+//                .rollup(function(leaves) { return leaves.length; })
+//                .entries(data);
+//        console.log(nested_data);
+        console.log(data);
+
+        $.each(data,function(id,array){
+        //    $.each(data,function(key, obj){
+
+                //console.log(id);
+
+                var idObj = data[id]["location"];
+                if( idObj == undefined){
+                    data[id]["location"] = {"lat":0,"lng":0};
+
+                    d3.json("https://maps.googleapis.com/maps/api/geocode/json?address=NY,+"+array.ZCTA5CE00+"&sensor=false&key=AIzaSyCwuY8RUgBX21PcZKxkmgQB4plcKT7Vlpo",function(res){
+                        data[id]["location"] = {"lat":0,"lng":0};
+                        data[id]["location"]["lat"] =res.results[0].geometry.location.lat;
+                        data[id]["location"]["lng"] = res.results[0].geometry.location.lng;
+                        //console.log(data[id]["location"]);
+                        if(id == data.length-1){
+                            saveToFile(data,"nyczip.json");
+                        }
+                    });
+                }
+        //    });
+        });
+        //saveToFile(data,"nyczip.json");
+
+    });
+
+    var saveToFile = function(object, filename){
+        var blob, blobText;
+        blobText = [JSON.stringify(object)];
+        blob = new Blob(blobText, {
+            type: "text/plain;charset=utf-8"
+        });
+        saveAs(blob, filename);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

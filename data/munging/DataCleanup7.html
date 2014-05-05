@@ -36,7 +36,7 @@
 
 
 
-    d3.json("./data/cleanedData/cleaned_data_01.json",function(error,dataC){
+    d3.json("./data/cleanedData/cleaned_data_sfo_02.json",function(error,dataC){
 
         d3.csv("./data/90spatentsBOS_NYC_SF.csv",function(error,data){
 
@@ -47,6 +47,7 @@
 
                 bosArr = dataC["children"][0]["yearly"] // Boston Array
                 nycArr = dataC["children"][1]["yearly"] // New York Array
+                sfoArr = dataC["children"][2]["yearly"] // San Francisco Array
 
                 bosObj = {
                     "year":array["Year"],
@@ -58,7 +59,13 @@
                     "year":array["Year"],
                     "patent":parseInt(array["NYC"])
                 }
-                nycArr.push(nycObj);
+                nycArr.push(sfoObj);
+
+                sfoObj = {
+                    "year":array["Year"],
+                    "patent":parseInt(array["SF"])
+                }
+                sfoArr.push(sfoObj);
 
             });
 

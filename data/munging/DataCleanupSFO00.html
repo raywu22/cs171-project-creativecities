@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="./libs/d3.v3.min.js"></script>
+<script src="./libs/queue.v1.min.js"></script>
+<script src="./libs/topojson.v1.min.js"></script>
+<script type="text/javascript" src="./libs/jquery-1.11.0.min.js"></script>
+<script src="./libs/FileSaver.js"></script>
+
+<div id="vis"></div>
+
+
+<script>
+
+    // all_data_01.json
+
+    //      // 90spatentsBOS_NYC_SF.csv                                 # City Level #
+    //DONE  // Sfoton_Active_Food_Establishment_FT_filter.csv           # Neighborhood Level #
+    //DONE  // Sfoton_Public_Schools__School_Year_2012-2013_.csv        # Neighborhood Level #
+    // boston_registeredcompanies.csv
+    // BP_2011_00CZ1_metadata.csv
+    // BP_2011_00CZ1_with_ann.csv
+    // creativeprofessionsbosnyc.csv
+    // grid_quarters_public_metadata.csv
+    // mbta_ridership_with_lat_long.csv
+    // MTA_ridership_data_with_lat_long.csv
+    // NSRDB_StationsMeta.csv
+    // NYCSidewalk_Cafes.csv
+    //
+    // rae_public_metadata.csv
+    // us-named.json
+
+
+
+
+    d3.json("./data/cleanedData/cleaned_data_sfo_02.json",function(error,data){
+        d3.csv("./data/sf_subway.v2.csv",function(errorSfo,dataSfo){
+            //d3.csv("./data/MTA_ridership_data_with_lat_long.csv",function(errorNyc,dataNyc){
+
+                var totalTransSfo = 0;
+//                var totalTransNyc = 0;
+
+        //        d3.json("./data/bosShape.geojson",function(errorA,dataA){
+        //
+        //            d3.json("./data/nycShape.geojson",function(errorB,dataB){
+
+            //            var nested_data = d3.nest()
+            //                .key(function(d) { return d.Address_Zip_Code; }).sortKeys(d3.ascending)
+            //            //.key(function(d) { return d.SCH_TYPE; }).sortKeys(d3.ascending)
+            //                .rollup(function(leaves) { return leaves.length; })
+            //                .entries(dataS);
+
+                data["other"] = [{"name":"Transportation", "size":0, "children":[]}];
+                //data["children"][1]["other"] = [{"name":"Transportation", "size":0, "children":[]}];
+
+                $.each(dataSfo,function(idB,arrayB){
+                    data["other"][0]["children"].push({"name":arrayB["Station_Fullname"], "size":parseInt(arrayB["Weekday_Ridership_(entry)"]), "location":{"lat":parseFloat(arrayB["Latitude"]), "lng":parseFloat(arrayB["Longitude"])}})
+                    data["other"][0]["size"] += parseInt(arrayB["Weekday_Ridership_(entry)"])
+                });
+
+//                $.each(dataNyc,function(idN,arrayN){
+//
+//                    var locationString = arrayN["Combined_code"];
+//                    var matches=locationString.match(/-?\d+\.\d+/g);
+//                    var lat=parseFloat(matches[0]);
+//                    var lng=parseFloat(matches[1]);
+//
+//                    data["children"][1]["other"][0]["children"].push({"name":arrayN["Station_clean"], "size":parseInt(arrayN["2010"].replace(/\,/g,'')), "location":{"lat":lat, "lng":lng}})
+//                    data["children"][1]["other"][0]["size"] += parseInt(arrayN["2010"].replace(/\,/g,''))
+//                });
+                console.log( data);
+                console.log( data["other"][0]["size"]);
+//                console.log( data["children"][1]["totalFood"]);
+//                console.log(data["children"][1]["totalSchool"]);
+//                //console.log(data["children"][0]["totalCompany"]);
+
+
+
+                saveToFile(data,"cleaned_data_sfo_02.json");
+            //})
+        })
+
+    });
+
+    var saveToFile = function(object, filename){
+        var blob, blobText;
+        blobText = [JSON.stringify(object)];
+        blob = new Blob(blobText, {
+            type: "text/plain;charset=utf-8"
+        });
+        saveAs(blob, filename);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

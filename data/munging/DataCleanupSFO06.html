@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="./libs/d3.v3.min.js"></script>
+<script src="./libs/queue.v1.min.js"></script>
+<script src="./libs/topojson.v1.min.js"></script>
+<script type="text/javascript" src="./libs/jquery-1.11.0.min.js"></script>
+<script src="./libs/FileSaver.js"></script>
+
+<div id="vis"></div>
+
+
+<script>
+
+    // all_data_01.json
+
+    //      // 90spatentsBOS_NYC_SF.csv                                 # City Level #
+    //DONE  // Boston_Active_Food_Establishment_FT_filter.csv           # Neighborhood Level #
+    //DONE  // Boston_Public_Schools__School_Year_2012-2013_.csv        # Neighborhood Level #
+    // boston_registeredcompanies.csv
+    // BP_2011_00CZ1_metadata.csv
+    // BP_2011_00CZ1_with_ann.csv
+    // creativeprofessionsbosnyc.csv
+    // grid_quarters_public_metadata.csv
+    // mbta_ridership_with_lat_long.csv
+    // MTA_ridership_data_with_lat_long.csv
+    // NSRDB_StationsMeta.csv
+    // NYCSidewalk_Cafes.csv
+    //
+    // rae_public_metadata.csv
+    // us-named.json
+
+
+
+
+    d3.json("./data/citiesData.json",function(error,dataC){
+        d3.json("./data/CleanedData/cleaned_data_sfo_07.json",function(error,dataS){
+
+            var nyc = dataC["children"][1]["children"];
+            //var nyc = dataC["children"][1]["children"];
+
+            var companyT = 0;
+
+            $.each(nyc,function(idC,arrayC){
+
+                //console.log(arrayC);
+                $.each(arrayC["children"], function(id, array){
+                    if(array["name"] == "Company"){
+                        companyT += array["size"];
+                    }
+                })
+
+            });
+
+            dataC["children"][1]["totalCompany"] = companyT;
+
+
+            dataC["children"].push(dataS)
+            console.log(dataC)
+            saveToFile(dataC,"cleaned_data_12.json");
+
+        });
+    });
+
+
+    var saveToFile = function(object, filename){
+        var blob, blobText;
+        blobText = [JSON.stringify(object)];
+        blob = new Blob(blobText, {
+            type: "text/plain;charset=utf-8"
+        });
+        saveAs(blob, filename);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

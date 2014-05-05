@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="./libs/d3.v3.min.js"></script>
+<script src="./libs/queue.v1.min.js"></script>
+<script src="./libs/topojson.v1.min.js"></script>
+<script type="text/javascript" src="./libs/jquery-1.11.0.min.js"></script>
+<script src="./libs/FileSaver.js"></script>
+
+<div id="vis"></div>
+
+
+<script>
+
+
+//    var orgData = {};
+//    orgData["name"] = "Cities";
+//    orgData["children"] = [
+//        {
+//            "name":"Boston",
+//            "location":{
+//                "lat": 42.358431,
+//                "lng": -71.059773
+//            },
+//            "yearly":[],
+//            "children":[]
+//        },
+//        {
+//            "name":"New York",
+//            "location":{
+//                "lat": 40.714353,
+//                "lng": -74.005973
+//            },
+//            "yearly":[],
+//            "children":[]
+//        }
+//    ];
+
+    // Reorganize data to work on Treemaps
+    d3.json("./data/citiesData.json",function(error,dataC){
+
+
+
+        var nyc = dataC["children"][1]["children"];
+
+        $.each(nyc, function(id, array){
+
+            var temp = array["children"][2];
+            array["children"][2] = array["children"][1];
+            array["children"][1] = temp;
+
+        });
+
+        console.log(dataC)
+
+        saveToFile(dataC,"cleaned_data_14.json");
+
+
+
+    });
+
+    var saveToFile = function(object, filename){
+        var blob, blobText;
+        blobText = [JSON.stringify(object)];
+        blob = new Blob(blobText, {
+            type: "text/plain;charset=utf-8"
+        });
+        saveAs(blob, filename);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

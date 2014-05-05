@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="./libs/d3.v3.min.js"></script>
+<script src="./libs/queue.v1.min.js"></script>
+<script src="./libs/topojson.v1.min.js"></script>
+<script type="text/javascript" src="./libs/jquery-1.11.0.min.js"></script>
+<script src="./libs/FileSaver.js"></script>
+
+<div id="vis"></div>
+
+
+<script>
+
+    // all_data_01.json
+
+    //      // 90spatentsBOS_NYC_SF.csv                                 # City Level #
+    //DONE  // Boston_Active_Food_Establishment_FT_filter.csv           # Neighborhood Level #
+    //DONE  // Boston_Public_Schools__School_Year_2012-2013_.csv        # Neighborhood Level #
+    // boston_registeredcompanies.csv
+    // BP_2011_00CZ1_metadata.csv
+    // BP_2011_00CZ1_with_ann.csv
+    // creativeprofessionsbosnyc.csv
+    // grid_quarters_public_metadata.csv
+    // mbta_ridership_with_lat_long.csv
+    // MTA_ridership_data_with_lat_long.csv
+    // NSRDB_StationsMeta.csv
+    // NYCSidewalk_Cafes.csv
+    //
+    // rae_public_metadata.csv
+    // us-named.json
+
+
+
+
+    d3.json("./data/citiesData.json",function(error,data){
+
+        d3.json("./data/bosShape.geojson",function(errorA,dataA){
+
+            d3.json("./data/nycShape.geojson",function(errorB,dataB){
+
+    //            var nested_data = d3.nest()
+    //                .key(function(d) { return d.Address_Zip_Code; }).sortKeys(d3.ascending)
+    //            //.key(function(d) { return d.SCH_TYPE; }).sortKeys(d3.ascending)
+    //                .rollup(function(leaves) { return leaves.length; })
+    //                .entries(dataS);
+
+                data["children"][0]["geometry"] = dataA["features"][0]["geometry"];
+                data["children"][1]["geometry"] = dataB["features"][0]["geometry"];
+
+//                $.each(data["children"][1]["children"],function(id,array){
+//
+//                    $.each(dataS,function(idS,arrayS){
+//                        if(parseInt(array["name"]) == parseInt(arrayS["ZCTA5CE00"])){
+//
+//                            array["location"] = arrayS["location"]
+//    //                        var schoolObj = array["school"];
+//    //                        if( schoolObj == undefined){
+//    //                            array["food"] = arrayS["values"];
+//    //                        }else{
+//    //                            array["food"] = arrayS["values"];
+//                            }
+//    //                    }else{
+//    //                        var schoolObj = array["school"];
+//    //                        if( schoolObj == undefined){
+//    //                            array["food"] = 0;
+//    //                        }
+//    //                    }
+//                        //console.log(id+" "+idS)
+//                        if(id == 199 && idS == 199){
+//                //            saveToFile(data,"cleaned_data_06.json");
+//                        }
+//                    });
+//
+//                });
+                saveToFile(data,"cleaned_data_07.json");
+            });
+
+        });
+
+    });
+
+    var saveToFile = function(object, filename){
+        var blob, blobText;
+        blobText = [JSON.stringify(object)];
+        blob = new Blob(blobText, {
+            type: "text/plain;charset=utf-8"
+        });
+        saveAs(blob, filename);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

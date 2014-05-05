@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="./libs/d3.v3.min.js"></script>
+<script src="./libs/queue.v1.min.js"></script>
+<script src="./libs/topojson.v1.min.js"></script>
+<script type="text/javascript" src="./libs/jquery-1.11.0.min.js"></script>
+<script src="./libs/FileSaver.js"></script>
+
+<div id="vis"></div>
+
+
+<script>
+
+
+//    var orgData = {};
+//    orgData["name"] = "Cities";
+//    orgData["children"] = [
+//        {
+//            "name":"Boston",
+//            "location":{
+//                "lat": 42.358431,
+//                "lng": -71.059773
+//            },
+//            "yearly":[],
+//            "children":[]
+//        },
+//        {
+//            "name":"New York",
+//            "location":{
+//                "lat": 40.714353,
+//                "lng": -74.005973
+//            },
+//            "yearly":[],
+//            "children":[]
+//        }
+//    ];
+
+
+var sfoDataObj = {};
+
+sfoDataObj["name"] = "San Francisco";
+sfoDataObj["location"] = {"lat":37.7833, "lng":-122.4167}
+sfoDataObj["yearly"] = [];
+sfoDataObj["children"] = [];
+sfoDataObj["geometry"] = {};
+sfoDataObj["totalFood"] = 0;
+sfoDataObj["totalSchool"] = 0;
+sfoDataObj["totalCompany"] = 0;
+sfoDataObj["other"] = [];
+
+//console.log(sfoDataObj)
+    // Reorganize data to work on Treemaps
+    d3.json("./data/cleanedData/cleaned_data_sfo_01.json",function(error,dataC){
+        d3.csv("./data/sfoCentroids.csv",function(error,data){
+
+        //dataC["children"].push(sfoDataObj)
+            $.each(data, function(id, array){
+                dataC["children"].push({"name":array["ZIP"], "location":{"lat":+array["Y"], "lng":+array["X"]}, "children":[]})
+            })
+
+
+        console.log(dataC)
+//        d3.csv("./data/nyc_companies.csv",function(error,data){
+//
+//            var nyc = dataC["children"][1]["children"];
+//            //var nyc = dataC["children"][1]["children"];
+//
+//            $.each(nyc,function(idC,arrayC){
+//
+//
+////                if(arrayC["children"].length <3){
+////                    var obj = {}
+////                    obj["name"] = "Company";
+////                    obj["size"] = 0;
+////                    obj["children"] = [];
+////                    arrayC["children"].push(obj);
+////                    console.log(arrayC);
+////                }
+//                $.each(arrayC["children"], function(id, array){
+//                    if(array["name"] == "Company"){
+//                        console.log(array)
+//                        array["size"] = parseInt(array["size"]);
+//                        console.log(array)
+//                    }
+//                })
+//
+//                $.each(data,function(id,array){
+//
+//                    //console.log(arrayC);
+//
+//                    if(parseInt(arrayC["name"]) == parseInt(array["NYC_zip_codes"]) ){
+//
+////                        var locationString = array["Business_Address"]+", "+array["City"]+", "+array["State"]+" 0"+array["Zipcode"];
+////                        d3.json("https://maps.googleapis.com/maps/api/geocode/json?address="+locationString+"&sensor=true&key=AIzaSyCwuY8RUgBX21PcZKxkmgQB4plcKT7Vlpo",function(res){
+//
+//                            var obj = {}
+//                            obj["name"] = "Company";
+//                            obj["size"] = array["Companies_incorporated"];
+//                            obj["children"] = [];
+//
+////                            if(res.results[0]){
+////                            //    console.log(res);
+////
+////                                var lat = res.results[0].geometry.location.lat;
+////                                var long = res.results[0].geometry.location.lng;
+////
+////                                //obj["location"] = [long,lat];
+////                                obj["location"] = {"lat": lat, "lng":long};
+////                            }
+//
+////                            $.each(arrayC["children"],function(id_c,array_c){
+////                                if(array_c["name"] == "Company"){
+////                                    array_c["children"].push(obj);
+////                                }
+////                            });
+//
+//                        arrayC["children"].push(obj);
+//
+//                        //console.log(String(idC) + " =? " + String(bos.length-1) + " :: " + String(id) + " =? " + String(data.length-1))
+//                        console.log(id)
+//                            if(idC == nyc.length-1 && id > 138   ){
+//                                console.log(dataC)
+//                                saveToFile(dataC,"cleaned_data_11.json");
+//                            }
+////                        });
+//
+//                    }
+//
+//                })
+//
+//                // console.log(dataC);
+//
+            //saveToFile(dataC,"cleaned_data_sfo_02.json");
+            });
+
+
+//
+//        });
+
+    });
+
+    var saveToFile = function(object, filename){
+        var blob, blobText;
+        blobText = [JSON.stringify(object)];
+        blob = new Blob(blobText, {
+            type: "text/plain;charset=utf-8"
+        });
+        saveAs(blob, filename);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

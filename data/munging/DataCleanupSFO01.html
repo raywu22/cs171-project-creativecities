@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="./libs/d3.v3.min.js"></script>
+<script src="./libs/queue.v1.min.js"></script>
+<script src="./libs/topojson.v1.min.js"></script>
+<script type="text/javascript" src="./libs/jquery-1.11.0.min.js"></script>
+<script src="./libs/FileSaver.js"></script>
+
+<div id="vis"></div>
+
+
+<script>
+
+    // all_data_01.json
+
+    //      // 90spatentsBOS_NYC_SF.csv                                 # City Level #
+    //DONE  // Boston_Active_Food_Establishment_FT_filter.csv           # Neighborhood Level #
+    //DONE  // Boston_Public_Schools__School_Year_2012-2013_.csv        # Neighborhood Level #
+    // boston_registeredcompanies.csv
+    // BP_2011_00CZ1_metadata.csv
+    // BP_2011_00CZ1_with_ann.csv
+    // creativeprofessionsbosnyc.csv
+    // grid_quarters_public_metadata.csv
+    // mbta_ridership_with_lat_long.csv
+    // MTA_ridership_data_with_lat_long.csv
+    // NSRDB_StationsMeta.csv
+    // NYCSidewalk_Cafes.csv
+    //
+    // rae_public_metadata.csv
+    // us-named.json
+
+
+
+
+    d3.json("./data/cleanedData/cleaned_data_sfo_03.json",function(error,data){
+
+        d3.json("./data/sf_publicschool_zip.json",function(error,dataS){
+
+            var nested_data = d3.nest()
+                .key(function(d) { return d.zip; }).sortKeys(d3.ascending)
+            //.key(function(d) { return d.SCH_TYPE; }).sortKeys(d3.ascending)
+                .rollup(function(leaves) { return {"name":"School", "size":leaves.length, "children":leaves}; })
+                .entries(dataS);
+
+            console.log(nested_data)
+
+            $.each(data["children"],function(id,array){
+
+                if(array["children"][0] == null){
+                   console.log(id)
+                   array["children"].push({"name":"School", "size":0, "children":[]})
+                }
+
+//                $.each(nested_data,function(idS,arrayS){
+//
+//                    if(parseInt(array["name"]) == parseInt(arrayS["key"])){
+//
+////                        var schoolObj = array["school"];
+////                        if( schoolObj == undefined){
+////                            array["school"] = arrayS["values"];
+////                        }else{
+////                            array["school"] = arrayS["values"];
+////                        }
+//                        //console.log(array)
+//                        array["children"].push(arrayS["values"])
+//                    }else{
+////                        var schoolObj = array["school"];
+////                        if( schoolObj == undefined){
+////                            array["school"] = 0;
+////                        }
+//                       // array.push({"name":"School", "size":0, "children":[]})
+//                    }
+//                });
+
+            });
+           //saveToFile(data,"cleaned_data_sfo_03.json");
+        });
+
+    });
+
+    var saveToFile = function(object, filename){
+        var blob, blobText;
+        blobText = [JSON.stringify(object)];
+        blob = new Blob(blobText, {
+            type: "text/plain;charset=utf-8"
+        });
+        saveAs(blob, filename);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

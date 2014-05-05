@@ -33,8 +33,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -50,8 +50,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
@@ -63,31 +63,33 @@
     <favorites_list name="CS171Project" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.13218884">
+    <splitter split-orientation="horizontal" split-proportion="0.47317925">
       <split-first>
         <leaf>
-          <file leaf-file-name="CreativeCities.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CreativeCities.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="257" column="49" selection-start="7314" selection-end="7314" vertical-scroll-proportion="0.0" vertical-offset="3765" max-vertical-offset="8085">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="testVoronoi.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/testVoronoi.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="240" column="36" selection-start="6593" selection-end="6593" vertical-scroll-proportion="1.1369369" vertical-offset="2969" max-vertical-offset="4590">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="CreativeCities.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CreativeCities.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="5" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0" vertical-offset="989" max-vertical-offset="4485">
+                <state line="58" column="0" selection-start="3066" selection-end="3066" vertical-scroll-proportion="61.826088" vertical-offset="2234" max-vertical-offset="3682">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CreativeCities.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/CreativeCities.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1358" column="38" selection-start="44119" selection-end="44119" vertical-scroll-proportion="-2.2451172" vertical-offset="29459" max-vertical-offset="30720">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GeoUSA.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../HW4/ProblemGeoUSA/GeoUSA.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="141" column="97" selection-start="3939" selection-end="3945" vertical-scroll-proportion="0.0" vertical-offset="1176" max-vertical-offset="4382">
                   <folding />
                 </state>
               </provider>
@@ -97,37 +99,48 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="DataCleanup3.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup3.html">
+          <file leaf-file-name="CreativeCities.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/CreativeCities.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="16" selection-start="1198" selection-end="1198" vertical-scroll-proportion="-16.875" vertical-offset="210" max-vertical-offset="1380">
+                <state line="250" column="0" selection-start="10749" selection-end="10749" vertical-scroll-proportion="0.92697173" vertical-offset="5048" max-vertical-offset="6312">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DataCleanup4.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup4.html">
+          <file leaf-file-name="CreativeCities.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CreativeCities.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="29" selection-start="958" selection-end="958" vertical-scroll-proportion="-2.75" vertical-offset="369" max-vertical-offset="1425">
+                <state line="873" column="10" selection-start="25236" selection-end="25236" vertical-scroll-proportion="0.0" vertical-offset="19076" max-vertical-offset="33792">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../../vistest/sips3/js/functions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="1066" column="36" selection-start="114741" selection-end="114741" vertical-scroll-proportion="0.0" vertical-offset="14374" max-vertical-offset="23450">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DataCleanup.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup.html">
+          <file leaf-file-name="bonus_bar.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../HW1/bonus_bar.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="0" selection-start="540" selection-end="540" vertical-scroll-proportion="-5.3333335" vertical-offset="187" max-vertical-offset="1380">
+                <state line="156" column="26" selection-start="5499" selection-end="5499" vertical-scroll-proportion="-5.265306" vertical-offset="1926" max-vertical-offset="3486">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cleaned_data_04.json" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/data/cleanedData/cleaned_data_04.json">
+          <file leaf-file-name="DataCleanupSFO04.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupSFO04.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="84" column="21" selection-start="2321" selection-end="2321" vertical-scroll-proportion="-1.4540817" vertical-offset="2115" max-vertical-offset="70095">
+                <state line="8" column="22" selection-start="176" selection-end="178" vertical-scroll-proportion="-2.2857144" vertical-offset="0" max-vertical-offset="1498">
                   <folding />
                 </state>
               </provider>
@@ -145,63 +158,64 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$USER_HOME$/Downloads/all_data_04.json" />
-        <option value="$USER_HOME$/Downloads/all_data_04 (1).json" />
-        <option value="$USER_HOME$/Downloads/company.json" />
-        <option value="$USER_HOME$/Downloads/all_data_04 (2).json" />
-        <option value="$USER_HOME$/Downloads/all_data_04 (3).json" />
-        <option value="$PROJECT_DIR$/DataCleanup5.html" />
-        <option value="$USER_HOME$/Downloads/company (3).json" />
-        <option value="$USER_HOME$/Downloads/schools (1).json" />
-        <option value="$PROJECT_DIR$/data/all_data_04.json" />
-        <option value="$PROJECT_DIR$/CreativeCities.js" />
-        <option value="$PROJECT_DIR$/DataCleanup6.html" />
-        <option value="$PROJECT_DIR$/testVoronoi.html" />
-        <option value="$PROJECT_DIR$/data/CleanedData/OrganizedData01.js" />
-        <option value="$PROJECT_DIR$/data/Done/schools.json" />
-        <option value="$PROJECT_DIR$/OrganizedData.json" />
-        <option value="$PROJECT_DIR$/data/CleanedData/all_data_04e.json" />
-        <option value="$USER_HOME$/Downloads/cleaned_data_01.json" />
-        <option value="$PROJECT_DIR$/../HW4/data/reducedMonthStationHour2003_2004_months.json" />
-        <option value="$PROJECT_DIR$/organizedata.html" />
-        <option value="$PROJECT_DIR$/data/CleanedData/cleaned_data_01 2.json" />
-        <option value="$PROJECT_DIR$/datastruct.js" />
-        <option value="$PROJECT_DIR$/datastruct.json" />
-        <option value="$PROJECT_DIR$/data/munging/DataCleanup7.html" />
-        <option value="$PROJECT_DIR$/data/cleanedData/cleaned_data_02.json" />
-        <option value="$USER_HOME$/Downloads/cleaned_data_02.json" />
-        <option value="$PROJECT_DIR$/DataCleanup7.html" />
-        <option value="$USER_HOME$/Downloads/cleaned_data_02 (1).json" />
-        <option value="$PROJECT_DIR$/DataCleanup8.html" />
-        <option value="$PROJECT_DIR$/data/cleanedData/cleaned_data_04.json" />
-        <option value="$USER_HOME$/Downloads/test.json" />
-        <option value="$USER_HOME$/Downloads/test (1).json" />
-        <option value="$PROJECT_DIR$/data/cleanedData/all_data_02.json" />
-        <option value="$PROJECT_DIR$/DataCleanup9.html" />
-        <option value="$PROJECT_DIR$/DataCleanup.html" />
-        <option value="$USER_HOME$/Downloads/nycZip.json" />
-        <option value="$PROJECT_DIR$/DataCleanupNYC01.html" />
-        <option value="$USER_HOME$/Downloads/all_data_nyc_01.json" />
-        <option value="$PROJECT_DIR$/DataCleanupNYC02.html" />
-        <option value="$USER_HOME$/Downloads/all_data_nyc_02.json" />
-        <option value="$USER_HOME$/Downloads/cleaned_data_04.json" />
-        <option value="$PROJECT_DIR$/organizedata01.html" />
-        <option value="$PROJECT_DIR$/expandData.html" />
-        <option value="$PROJECT_DIR$/expandData01.html" />
-        <option value="$PROJECT_DIR$/expandData02.html" />
-        <option value="$PROJECT_DIR$/data/munging/DataCleanup.html" />
         <option value="$PROJECT_DIR$/expandData03.html" />
-        <option value="$PROJECT_DIR$/data/cleanedData/cleaned_data_05.json" />
         <option value="$PROJECT_DIR$/expandData05.html" />
         <option value="$PROJECT_DIR$/data/munging/DataCleanup4.html" />
         <option value="$PROJECT_DIR$/expandData04.html" />
         <option value="$USER_HOME$/Downloads/cleaned_data_05.json" />
+        <option value="$PROJECT_DIR$/CreativeCities_bu.js" />
+        <option value="$PROJECT_DIR$/data/citiesData01.json" />
+        <option value="$PROJECT_DIR$/data/munging/DataCleanup.html" />
+        <option value="$PROJECT_DIR$/DataCleanup.html" />
+        <option value="$USER_HOME$/Downloads/nyczip.json" />
+        <option value="$PROJECT_DIR$/organizedata.html" />
+        <option value="$PROJECT_DIR$/data/cleanedData/all_data_nyc_01.json" />
+        <option value="$PROJECT_DIR$/data/cleanedData/cleaned_data_05.json" />
+        <option value="$PROJECT_DIR$/data/nyczip.json" />
+        <option value="$PROJECT_DIR$/DataCleanupNYC03.html" />
+        <option value="$USER_HOME$/Downloads/cleaned_data_06.json" />
+        <option value="$PROJECT_DIR$/DataCleanup9.html" />
+        <option value="$PROJECT_DIR$/DataCleanupNYC10.html" />
+        <option value="$USER_HOME$/Downloads/cleaned_data_08.json" />
+        <option value="$USER_HOME$/Downloads/cleaned_data_09.json" />
+        <option value="$PROJECT_DIR$/data/citiesData.json" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/DataCleanup11.html" />
+        <option value="$USER_HOME$/Downloads/cleaned_data_10.json" />
+        <option value="$PROJECT_DIR$/data/cleanedData/cleaned_data_10.json" />
+        <option value="$PROJECT_DIR$/data/citiesDataLook 2.json" />
+        <option value="$PROJECT_DIR$/expandData06.html" />
+        <option value="$USER_HOME$/Downloads/cleaned_data_11.json" />
+        <option value="$USER_HOME$/Downloads/cleaned_data_sfo_01.json" />
+        <option value="$PROJECT_DIR$/expandData07.html" />
+        <option value="$PROJECT_DIR$/DataCleanup12.html" />
+        <option value="$PROJECT_DIR$/DataCleanup7.html" />
+        <option value="$PROJECT_DIR$/DataCleanupSFO00.html" />
+        <option value="$PROJECT_DIR$/data/citiesData 2.json" />
+        <option value="$USER_HOME$/Downloads/sf_publicSchool_zip.json" />
+        <option value="$USER_HOME$/Downloads/cleaned_data_sfo_03.json" />
+        <option value="$PROJECT_DIR$/DataCleanupSFO01.html" />
+        <option value="$PROJECT_DIR$/DataCleanupSFO02.html" />
+        <option value="$USER_HOME$/Downloads/cleaned_data_sfo_04.json" />
+        <option value="$PROJECT_DIR$/data/cleanedData/cleaned_data_sfo_04.json" />
+        <option value="$PROJECT_DIR$/data/cleaned_data_sfo_05.json" />
+        <option value="$PROJECT_DIR$/data/munging/DataCleanup10.html" />
+        <option value="$PROJECT_DIR$/DataCleanup10.html" />
+        <option value="$PROJECT_DIR$/DataCleanupSFO03.html" />
+        <option value="$PROJECT_DIR$/DataCleanupSFO05.html" />
+        <option value="$PROJECT_DIR$/data/citiesDataLook.json" />
+        <option value="$PROJECT_DIR$/DataCleanupSFO06.html" />
+        <option value="$PROJECT_DIR$/CreativeCities2.html" />
+        <option value="$PROJECT_DIR$/organizedata02.html" />
+        <option value="$PROJECT_DIR$/CreativeCities.js" />
+        <option value="$PROJECT_DIR$/CreativeCities.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-2560" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,8 +245,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
+      <pane id="Scope">
+        <subPane subId="Project Files" />
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -244,8 +258,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -264,7 +278,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
-    <property name="options.lastSelected" value="appearance" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -272,7 +286,7 @@
     <property name="LayoutCode.rearrangeEntriesJSON" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.DataCleanup2">
+  <component name="RunManager" selected="JavaScript Debug.CreativeCitiesVisTest">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -503,10 +517,16 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <list size="3">
+    <configuration default="false" name="CreativeCitiesVisTest" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" uri="http://localhost:8000/CreativeCities2.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.CreativeCities" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.dataCleanup" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.DataCleanup2" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.CreativeCitiesVisTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -541,25 +561,29 @@
       <workItem from="1397863352023" duration="371000" />
       <workItem from="1397863755251" duration="1793000" />
       <workItem from="1397932708637" duration="26119000" />
-      <workItem from="1398245545399" duration="42644000" />
+      <workItem from="1398245545399" duration="52085000" />
+      <workItem from="1398809026060" duration="42353000" />
+      <workItem from="1398945331991" duration="34923000" />
+      <workItem from="1399005388889" duration="99473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87048000" />
+    <option name="totallyTimeSpent" value="273238000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-2560" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19759037" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20364964" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24121779" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24031563" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -570,12 +594,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16165951" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06076251" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
@@ -594,312 +617,280 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CreativeCities.js">
+    <entry file="file://$PROJECT_DIR$/../HW1/bonus_table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreativeCities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="50" selection-start="5989" selection-end="5989" vertical-scroll-proportion="0.0" vertical-offset="2610" max-vertical-offset="4080">
-          <folding />
-        </state>
+        <state line="92" column="44" selection-start="1228" selection-end="1236" vertical-scroll-proportion="0.12785389" vertical-offset="1240" max-vertical-offset="5190" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="22" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="2100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreativeCities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="7035">
+        <state line="21" column="23" selection-start="803" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="2100">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreativeCities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="50" selection-start="5989" selection-end="5989" vertical-scroll-proportion="0.0" vertical-offset="2610" max-vertical-offset="4080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="22" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0" vertical-offset="1125" max-vertical-offset="2100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreativeCities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="7035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreativeCities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="50" selection-start="5989" selection-end="5989" vertical-scroll-proportion="0.0" vertical-offset="2610" max-vertical-offset="4080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="22" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0" vertical-offset="951" max-vertical-offset="2100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="17" selection-start="4104" selection-end="4109" vertical-scroll-proportion="-3.75" vertical-offset="2175" max-vertical-offset="2640" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="10" selection-start="4246" selection-end="4246" vertical-scroll-proportion="-10.625" vertical-offset="2025" max-vertical-offset="2640" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="16" selection-start="4081" selection-end="4084" vertical-scroll-proportion="0.56088996" vertical-offset="1786" max-vertical-offset="2640" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Processing/CityScope/Kendall_Twitter_v3_with_Map_Proj/savedNodes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.22833724" vertical-offset="195" max-vertical-offset="19800" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../vistest/sips2/simulation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="71" selection-start="1237" selection-end="1237" vertical-scroll-proportion="-11.293911" vertical-offset="10005" max-vertical-offset="23175" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/rows.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="10" selection-start="0" selection-end="1" vertical-scroll-proportion="0.6850117" vertical-offset="0" max-vertical-offset="33060" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="22" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0" vertical-offset="951" max-vertical-offset="2100" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/food (1).json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/food (2).json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2145" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/food.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="10" selection-start="236" selection-end="236" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="307080" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/food (3).json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="20" selection-start="680" selection-end="684" vertical-scroll-proportion="-6.24" vertical-offset="318" max-vertical-offset="4185" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreativeCities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="5" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0" vertical-offset="989" max-vertical-offset="4485">
+        <state line="70" column="5" selection-start="2300" selection-end="2300" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2640">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CreativeCities.js">
+    <entry file="file://$PROJECT_DIR$/../../vistest/sips3/js/interactions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="257" column="49" selection-start="7314" selection-end="7314" vertical-scroll-proportion="0.0" vertical-offset="3765" max-vertical-offset="8085">
+        <state line="200" column="26" selection-start="7516" selection-end="7517" vertical-scroll-proportion="0.33279485" vertical-offset="2388" max-vertical-offset="35952">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Done/schools.json">
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupNycZip.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="22" selection-start="592" selection-end="592" vertical-scroll-proportion="0.5459272" vertical-offset="0" max-vertical-offset="1425">
+        <state line="32" column="20" selection-start="888" selection-end="888" vertical-scroll-proportion="0.3158743" vertical-offset="56" max-vertical-offset="1302">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Done/company.json">
+    <entry file="file://$PROJECT_DIR$/data/munging/expandData03.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1665">
+        <state line="61" column="24" selection-start="1734" selection-end="1961" vertical-scroll-proportion="0.68102074" vertical-offset="0" max-vertical-offset="1540">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/cleanedData/all_data_04.json">
+    <entry file="file://$PROJECT_DIR$/data/munging/expandData04.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="6" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.18197574" vertical-offset="1890" max-vertical-offset="5205">
+        <state line="67" column="0" selection-start="1001" selection-end="1002" vertical-scroll-proportion="-32.260868" vertical-offset="196" max-vertical-offset="1778">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/cleanedData/cleaned_data_01.json">
+    <entry file="file://$PROJECT_DIR$/../HW3/Problem2/differenceGraph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1165">
+        <state line="60" column="11" selection-start="1204" selection-end="1207" vertical-scroll-proportion="-53.076923" vertical-offset="0" max-vertical-offset="10902">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../HW4/data/reducedMonthStationHour2003_2004.json">
+    <entry file="file://$PROJECT_DIR$/data/munging/expandData01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HW4/data/reducedMonthStationHour2003_2004_years.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HW4/data/reducedMonthStationHour2003_2004_months.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1141">
-          <folding>
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 10202800...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;01:00:00 AM&quot;: 0...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 20309200...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;01:00:00 AM&quot;: 0...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 17499200...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 25759500...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;01:00:00 AM&quot;: 0...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 20596400...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;01:00:00 AM&quot;: 0...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 1121800...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 4525000...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 3107000...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;01:00:00 AM&quot;: 0...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 3502000...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;00:00:00 AM&quot;: 0...}" />
-            <marker date="1395867868000" expanded="true" signature="-1:-1" placeholder="{&quot;sum&quot;: 0...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HW4/data/NSRDB_StationsMeta.csv">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../HW4/ProblemGeoUSA/GeoUSA.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="3455" selection-end="3455" vertical-scroll-proportion="0.37339056" vertical-offset="1410" max-vertical-offset="4695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cleanedData/all_data_04e.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="61" selection-end="111" vertical-scroll-proportion="0.06499133" vertical-offset="0" max-vertical-offset="5205">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cleanedData/cleaned_data_02.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="99" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1141">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cleanedData/all_data_02.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="114" selection-start="111" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1141">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cleanedData/all_data_01.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="16" selection-start="1198" selection-end="1198" vertical-scroll-proportion="-16.875" vertical-offset="210" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/cleanedData/all_data_nyc_02.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1110" column="21" selection-start="21276" selection-end="21281" vertical-scroll-proportion="0.6239168" vertical-offset="15930" max-vertical-offset="28275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testVoronoi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="36" selection-start="6593" selection-end="6593" vertical-scroll-proportion="1.1369369" vertical-offset="2969" max-vertical-offset="4590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupNYC02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="56" selection-start="2475" selection-end="2475" vertical-scroll-proportion="0.47487003" vertical-offset="502" max-vertical-offset="1680">
+        <state line="47" column="0" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.32889584" vertical-offset="238" max-vertical-offset="1540">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="540" selection-end="540" vertical-scroll-proportion="-5.3333335" vertical-offset="187" max-vertical-offset="1380">
+        <state line="50" column="56" selection-start="912" selection-end="954" vertical-scroll-proportion="0.544722" vertical-offset="24" max-vertical-offset="1288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/expandData06.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2002">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/cleaned_data_11.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2075608" selection-start="2075608" selection-end="2075608" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupNYC00.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1274">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupNYC03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/cleaned_data_sfo_04.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="37" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.078947365" vertical-offset="1063" max-vertical-offset="33390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.36682615" vertical-offset="44" max-vertical-offset="1344">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1344">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="958" selection-end="958" vertical-scroll-proportion="-2.75" vertical-offset="369" max-vertical-offset="1425">
+        <state line="41" column="0" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.41547048" vertical-offset="53" max-vertical-offset="1330">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/cleanedData/cleaned_data_04.json">
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="21" selection-start="2321" selection-end="2321" vertical-scroll-proportion="-1.4540817" vertical-offset="2115" max-vertical-offset="70095">
+        <state line="41" column="16" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.44319096" vertical-offset="24" max-vertical-offset="1288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="56" selection-start="2475" selection-end="2475" vertical-scroll-proportion="0.5494418" vertical-offset="291" max-vertical-offset="1568">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="17" selection-start="1683" selection-end="1683" vertical-scroll-proportion="0.5917065" vertical-offset="0" max-vertical-offset="1386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupNYC02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="6" selection-start="994" selection-end="994" vertical-scroll-proportion="0.30382776" vertical-offset="53" max-vertical-offset="1330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupNYC01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="75" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.50765514" vertical-offset="0" max-vertical-offset="1526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanup10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="28" selection-start="1206" selection-end="1209" vertical-scroll-proportion="0.3907496" vertical-offset="98" max-vertical-offset="1498">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/expandData05.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="11" selection-start="459" selection-end="459" vertical-scroll-proportion="0.099683546" vertical-offset="168" max-vertical-offset="1750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/expandData.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="26" selection-start="517" selection-end="517" vertical-scroll-proportion="0.16444792" vertical-offset="112" max-vertical-offset="1512">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/cleaned_data_sfo_06 (1).json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="795106" selection-start="795098" selection-end="795106" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupSFO03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="23" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.7564604" vertical-offset="0" max-vertical-offset="1582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../vistest/sips3/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1066" column="36" selection-start="114741" selection-end="114741" vertical-scroll-proportion="0.0" vertical-offset="14374" max-vertical-offset="23450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupSFO05.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="1141" selection-end="1891" vertical-scroll-proportion="0.7126077" vertical-offset="0" max-vertical-offset="1358">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/munging/DataCleanupSFO04.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="176" selection-end="178" vertical-scroll-proportion="-2.2857144" vertical-offset="0" max-vertical-offset="1498">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HW4/ProblemGeoUSA/GeoUSA.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="97" selection-start="3939" selection-end="3945" vertical-scroll-proportion="0.0" vertical-offset="1176" max-vertical-offset="4382">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HW1/bonus_bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="26" selection-start="5499" selection-end="5499" vertical-scroll-proportion="-5.265306" vertical-offset="1926" max-vertical-offset="3486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreativeCities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="873" column="10" selection-start="25236" selection-end="25236" vertical-scroll-proportion="0.0" vertical-offset="19076" max-vertical-offset="33792">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreativeCities.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="250" column="0" selection-start="10749" selection-end="10749" vertical-scroll-proportion="0.92697173" vertical-offset="5048" max-vertical-offset="6312">
           <folding />
         </state>
       </provider>

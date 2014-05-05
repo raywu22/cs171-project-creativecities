@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="./libs/d3.v3.min.js"></script>
+<script src="./libs/queue.v1.min.js"></script>
+<script src="./libs/topojson.v1.min.js"></script>
+<script type="text/javascript" src="./libs/jquery-1.11.0.min.js"></script>
+<script src="./libs/FileSaver.js"></script>
+
+<div id="vis"></div>
+
+
+<script>
+
+    // all_data_01.json
+
+    //      // 90spatentsBOS_NYC_SF.csv                                 # City Level #
+    //DONE  // Boston_Active_Food_Establishment_FT_filter.csv           # Neighborhood Level #
+    //DONE  // Boston_Public_Schools__School_Year_2012-2013_.csv        # Neighborhood Level #
+    // boston_registeredcompanies.csv
+    // BP_2011_00CZ1_metadata.csv
+    // BP_2011_00CZ1_with_ann.csv
+    // creativeprofessionsbosnyc.csv
+    // grid_quarters_public_metadata.csv
+    // mbta_ridership_with_lat_long.csv
+    // MTA_ridership_data_with_lat_long.csv
+    // NSRDB_StationsMeta.csv
+    // NYCSidewalk_Cafes.csv
+    //
+    // rae_public_metadata.csv
+    // us-named.json
+
+
+var temp = [];
+
+//    d3.json("./data/cleanedData/cleaned_data_sfo_02.json",function(error,data){
+
+        d3.csv("./data/sf_publicschools1.csv",function(error,dataS){
+
+            $.each(dataS, function(id, array){
+
+                var locationString = array["Final_address"]+", San Francisco, CA";
+               // console.log(dataS)
+                d3.json("https://maps.googleapis.com/maps/api/geocode/json?address="+locationString+"&sensor=true&key=AIzaSyCwuY8RUgBX21PcZKxkmgQB4plcKT7Vlpo",function(res){
+
+                    var obj = {}
+                    obj["name"] = array["School"];
+                    //obj["type"] = array["Type_of_Business"];
+                    obj["city"] = "San Francisco";
+                    obj["size"] = 0;
+
+
+                    if(res.results[0]){
+                        console.log(res);
+
+                        var lat = res.results[0].geometry.location.lat;
+                        var long = res.results[0].geometry.location.lng;
+
+                        //obj["location"] = [long,lat];
+                        obj["location"] = {"lat": lat, "lng":long};
+                        obj["zip"] = res.results[0].address_components[(res.results[0].address_components.length)-1].long_name;
+                    }
+                    temp.push(obj)
+
+                    if(id ==156){
+                        saveToFile(temp,"sf_publicSchool_zip.json");
+                    }
+
+//                $.each(arrayC["children"],function(id_c,array_c){
+//                    if(array_c["name"] == "Company"){
+//                        array_c["children"].push(obj);
+//                    }
+//                });
+
+                    //console.log(String(idC) + " =? " + String(bos.length-1) + " :: " + String(id) + " =? " + String(data.length-1))
+//                if(idC == bos.length-1 && id > data.length-944 ){
+//                    //console.log(dataC)
+//                    //saveToFile(dataC,"cleaned_data_05.json");
+//                }
+                });
+
+            })
+
+//            var locationString = array["Final_address"]+", San Francisco, CA";
+//            console.log(locationString)
+//            d3.json("https://maps.googleapis.com/maps/api/geocode/json?address="+locationString+"&sensor=true&key=AIzaSyCwuY8RUgBX21PcZKxkmgQB4plcKT7Vlpo",function(res){
+//
+//                var obj = {}
+//                obj["name"] = array["School"];
+//                //obj["type"] = array["Type_of_Business"];
+//                obj["city"] = "San Francisco";
+//                obj["size"] = 0;
+//                obj["zip"] = "";
+//
+//                if(res.results[0]){
+//                        console.log(res);
+//
+//                    var lat = res.results[0].geometry.location.lat;
+//                    var long = res.results[0].geometry.location.lng;
+//
+//                    //obj["location"] = [long,lat];
+//                    obj["location"] = {"lat": lat, "lng":long};
+//                }
+//                temp.push(obj)
+//
+////                $.each(arrayC["children"],function(id_c,array_c){
+////                    if(array_c["name"] == "Company"){
+////                        array_c["children"].push(obj);
+////                    }
+////                });
+//
+//                //console.log(String(idC) + " =? " + String(bos.length-1) + " :: " + String(id) + " =? " + String(data.length-1))
+////                if(idC == bos.length-1 && id > data.length-944 ){
+////                    //console.log(dataC)
+////                    //saveToFile(dataC,"cleaned_data_05.json");
+////                }
+//            });
+
+
+
+//            var nested_data = d3.nest()
+//                .key(function(d) { return d.ZIP; }).sortKeys(d3.ascending)
+//            //.key(function(d) { return d.SCH_TYPE; }).sortKeys(d3.ascending)
+//                .rollup(function(leaves) { return leaves.length; })
+//                .entries(dataS);
+//
+//            $.each(data,function(id,array){
+//
+//                $.each(nested_data,function(idS,arrayS){
+//                    if(parseInt(array["key"]) == parseInt(arrayS["key"])){
+//
+//                        var schoolObj = array["school"];
+//                        if( schoolObj == undefined){
+//                            array["school"] = arrayS["values"];
+//                        }else{
+//                            array["school"] = arrayS["values"];
+//                        }
+//                    }else{
+//                        var schoolObj = array["school"];
+//                        if( schoolObj == undefined){
+//                            array["school"] = 0;
+//                        }
+//                    }
+//                });
+//
+//            });
+            //saveToFile(temp,"zipcode_sfo.json");
+        });
+
+//    });
+
+    var saveToFile = function(object, filename){
+        var blob, blobText;
+        blobText = [JSON.stringify(object)];
+        blob = new Blob(blobText, {
+            type: "text/plain;charset=utf-8"
+        });
+        saveAs(blob, filename);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>
