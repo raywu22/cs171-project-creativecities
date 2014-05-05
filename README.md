@@ -4,7 +4,7 @@
 - Mohammad (Moe) Hadhrawi  
 - Yu-Ann Wang
 
-Project Url: www.creativecities.co
+Project Url: www.creativecities.co or www.creativecities.co/index.html
 Screencast Url: https://vimeo.com/93927589
 
 Portions of code handed in:

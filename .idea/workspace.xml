@@ -99,10 +99,22 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="CreativeCities.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="CreativeCities.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CreativeCities.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="250" column="0" selection-start="10749" selection-end="10749" vertical-scroll-proportion="1.2659575" vertical-offset="5048" max-vertical-offset="6312">
+                <state line="219" column="36" selection-start="9393" selection-end="9393" vertical-scroll-proportion="-9.043478" vertical-offset="5048" max-vertical-offset="6312">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider editor-type-id="MarkdownPreviewEditor">
+                <state />
+              </provider>
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="70" selection-start="154" selection-end="154" vertical-scroll-proportion="0.110381074" vertical-offset="0" max-vertical-offset="761">
                   <folding />
                 </state>
               </provider>
@@ -158,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/expandData03.html" />
         <option value="$PROJECT_DIR$/expandData05.html" />
         <option value="$PROJECT_DIR$/data/munging/DataCleanup4.html" />
         <option value="$PROJECT_DIR$/expandData04.html" />
@@ -209,6 +220,7 @@
         <option value="$PROJECT_DIR$/organizedata02.html" />
         <option value="$PROJECT_DIR$/CreativeCities.js" />
         <option value="$PROJECT_DIR$/CreativeCities.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -564,22 +576,22 @@
       <workItem from="1398245545399" duration="52085000" />
       <workItem from="1398809026060" duration="42353000" />
       <workItem from="1398945331991" duration="34923000" />
-      <workItem from="1399005388889" duration="100008000" />
+      <workItem from="1399005388889" duration="101005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273773000" />
+    <option name="totallyTimeSpent" value="274770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40437958" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40437958" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -890,7 +902,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CreativeCities.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="250" column="0" selection-start="10749" selection-end="10749" vertical-scroll-proportion="1.2659575" vertical-offset="5048" max-vertical-offset="6312">
+        <state line="219" column="36" selection-start="9393" selection-end="9393" vertical-scroll-proportion="-9.043478" vertical-offset="5048" max-vertical-offset="6312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="70" selection-start="154" selection-end="154" vertical-scroll-proportion="0.110381074" vertical-offset="0" max-vertical-offset="761">
           <folding />
         </state>
       </provider>
