@@ -1,0 +1,55 @@
+{
+    // Root data level
+    "name":"Cities",
+    "children":[ // Number of children equals number of cities analyzed, or included in the visualization
+                 // each child is an object that contains the following:
+        {
+            "name":"city",  // 1. name of the city
+            "location":{    // 2. location of the city as object of lat and lon
+                "lat":43.2323,
+                "lng":-74.0848
+            },
+            "yearly":[      // 3. yearly data available for that city to be used in bar/area/line charts
+                {
+                    "year":2014,        // a. year with date object
+                    "dataset01":111,    // b. dataset available for that date
+                    "dataset02":222
+                }
+
+                // ...
+
+            ],
+            "children":[    // 4. Number of children equals the number of Zipcodes in that city
+                            // each child will contain the following:
+                {
+                    "name": "02139",    // a. Zipcode of that city
+                    "location": {       // b. Location of the Zipcode on the map
+                        "lat": 20.649,
+                        "lng": -103.339
+                    },
+                    "children": [       // c. Number of children equals the number of datasets available for that city
+                                        // each child will contain the following:
+                        {
+                            "name": "School",   // i. Dataset name/type, e.g. "School" dataset
+                            "size": 0,          // ii. aggragated number of businesses/schools within this particular zipcode
+                            "children": [       // ii. Number of children equals the "size", and
+                                                // each child will contain data details, such as location, business/school name...etc.
+                                {}
+                            ]
+                        }
+
+                        // ...
+
+                    ]
+                }
+
+                // ...
+
+            ]
+        }
+
+        // ...
+
+    ]
+
+}
